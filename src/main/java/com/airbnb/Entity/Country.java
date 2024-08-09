@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name="country")
 @Getter
@@ -16,6 +18,10 @@ public class Country {
     private long id;
     @Column(name="country_name", unique = true,nullable = false,length = 200)
     private String countryName;
+    private String Names;
+    private LocalDate DDOB;
 
-
+    private long mobile;
 }
+
+
